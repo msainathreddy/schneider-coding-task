@@ -1,0 +1,16 @@
+<div class="card border-0 shadow-sm mb-3">
+  <div class="card-body d-flex align-items-center">
+    <div class="me-3">
+      <i class="bi bi-file-earmark-pdf-fill" style="font-size: 24px; color: green;"></i>
+    </div>
+    <div>
+      <h5 class="card-title mb-0">{{ reportTitle }}</h5>
+      <p class="card-text">{{ reportDescription }}</p>
+    </div>
+    <div class="ms-auto">
+      <button class="btn btn-outline-primary" (click)="downloadPDF()">
+        <i class="bi bi-download"></i> Download
+      </button>
+    </div>
+  </div>
+</div>

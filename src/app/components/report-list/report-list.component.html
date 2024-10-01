@@ -1,0 +1,47 @@
+<div class="container mt-5">
+  <div class="mb-3">
+    <label for="projectSelect" class="form-label">Select Project</label>
+    <select id="projectSelect" class="form-select">
+      <option selected>SES Chemical</option>
+      <option value="1">Project 1</option>
+      <option value="2">Project 2</option>
+      <option value="3">Project 3</option>
+    </select>
+  </div>
+
+  <h1>Project Name: SES Chemical</h1>
+  <p class="lead">Here you can generate a project report containing all data in separate PDF files.</p>
+  <button class="btn btn-dark mb-3" data-bs-toggle="modal" data-bs-target="#previewModal">
+    Preview Before Generate
+  </button>
+
+  <div class="row">
+    <app-report-card class="col-md-12 mb-3" *ngFor="let report of reports" [reportTitle]="report.title"
+      [reportDescription]="report.description"></app-report-card>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="previewModal" tabindex="-1" aria-labelledby="previewModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="previewModalLabel">Preview Report</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>This is a preview of the report with all the generated data.</p>
+        <ul>
+          <li>Blocks Report: Lorem ipsum dolor sit amet.</li>
+          <li>IO Report: Ac tellus odio commodo eu aliquam cras.</li>
+          <li>CS Report: Lorem ipsum dolor sit amet consectetur.</li>
+          <li>Displays Report: Dictum porttitor sed arcu lacus.</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Generate</button> -->
+      </div>
+    </div>
+  </div>
+</div>

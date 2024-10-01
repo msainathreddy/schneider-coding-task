@@ -1,0 +1,35 @@
+.list-group-item {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.list-group-item a {
+  color: #000;
+}
+
+.list-group-item a:hover {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Right arrow icon styling */
+.list-group-item i {
+  color: #333;
+}
+
+/* Style for the expanded Reports submenu */
+.list-group-item ul {
+  list-style-type: none;
+  padding-left: 15px;
+}
+
+.list-group-item ul li {
+  margin-top: 5px;
+  padding: 5px;
+  border: none;
+  background-color: #f9f9f9;
+}
+
+.list-group-item ul li:hover {
+  background-color: #ececec;
+}

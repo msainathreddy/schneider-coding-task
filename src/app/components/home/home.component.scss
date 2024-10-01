@@ -1,0 +1,19 @@
+.jumbotron {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
